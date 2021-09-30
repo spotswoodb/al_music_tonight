@@ -2,7 +2,7 @@ class VenuesController < ApplicationController
 
     def index
         venues = Venue.all
-        render json: venues
+        render json: VenueSerializer.new(venues)
     end
 
 end

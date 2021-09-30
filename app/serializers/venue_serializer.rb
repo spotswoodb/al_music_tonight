@@ -1,6 +1,6 @@
 class VenueSerializer
   include FastJsonapi::ObjectSerializer
-  set_type :venue
-  attributes :name, :address
+
+  attributes :name, :address, :all_events
   has_many :events
 end

@@ -5,4 +5,8 @@ class VenuesController < ApplicationController
         render json: VenueSerializer.new(venues, {include: [:events]})
     end
 
+    # def show
+    #     venue 
+    # end
+
 end

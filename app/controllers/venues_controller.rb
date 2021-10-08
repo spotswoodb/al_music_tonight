@@ -5,9 +5,9 @@ class VenuesController < ApplicationController
         render json: VenueSerializer.new(venues, {include: [:events]})
     end
 
-    # def show
-    #     venue 
-    # end
+    def show
+        render json: venue 
+    end
 
     def create 
         venue = Venue.new(venue_params)
@@ -16,6 +16,11 @@ class VenuesController < ApplicationController
         else
             render json: {error: "Couldnt be saved"}
         end
+    end
+
+    def destroy
+        venue.destroy
+        render json: {message: 'Venue successfully deleted'}
     end
 
 private

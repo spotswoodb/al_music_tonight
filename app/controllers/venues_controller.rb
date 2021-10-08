@@ -19,6 +19,7 @@ class VenuesController < ApplicationController
     end
 
     def destroy
+        venue = Venue.find_by_id(params[:id])
         venue.destroy
         render json: {message: 'Venue successfully deleted'}
     end

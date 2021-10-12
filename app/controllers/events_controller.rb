@@ -5,6 +5,10 @@ class EventsController < ApplicationController
         render json: EventSerializer.new(events, {include: [:venue]})
     end
 
+    def show
+        render json: event 
+    end
+
     def create 
         event = Event.new(event_params)
         if event.save
@@ -16,6 +20,7 @@ class EventsController < ApplicationController
 
 
 private
+
     def event_params
         params.require(:event).permit(:name, :date, :time, :image, :venue_id)
     end

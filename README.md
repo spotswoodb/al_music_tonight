@@ -1,24 +1,4 @@
-# README
+# AL Music Tonight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Instructions
+For more detailed instructions on how to use this API, please visit the README for the accompanying applications at https://github.com/spotswoodb/al_music_tonight_frontend.
